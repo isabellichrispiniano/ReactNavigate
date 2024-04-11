@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./components/Login";
 import Cities from "./components/Cities";
 import Japan from "./components/Japan";
+import Paris from "./components/Paris";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ export default () => {
                  <Stack.Screen name="escolha" component={Login} options={{headerStyle:{backgroundColor:"#008DDA"}}} />
                  <Stack.Screen name="cidade" component={Cities} options={{headerStyle:{backgroundColor:"#008DDA"}}} /> 
                  <Stack.Screen name="Tokyo" component={Japan} />
+                 <Stack.Screen name="Paris" component={Paris}/>
             </Stack.Navigator>
             </NavigationContainer>
         </SafeAreaView>
